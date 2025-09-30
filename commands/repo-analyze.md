@@ -9,6 +9,7 @@ Analyze a code repository using Gemini CLI collaboration to leverage Gemini's la
    - Record analysis metadata (timestamp, tools, versions)
 
 2. Gemini Global Analysis (Phase 1):
+   - IMPORTANT: executing each step in this phase by using `gemini -p`
    - Execute comprehensive architecture scan using `gemini -p`
    - Analyze project structure and organization
    - Identify technology stack and dependencies
