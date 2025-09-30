@@ -2,7 +2,7 @@ Create a GitHub pull request to the upstream branch: $ARGUMENTS
 
 1. Use `gh pr create` with the template from `.github/pull_request_template.md`
 
-2. Set target branch to `$ARGUMENTS` (default to `master` if empty)
+2. Set target branch to `$ARGUMENTS` (default to `master` if empty, if `master` does not exist, try `main`)
 
 3. If current branch matches pattern "AFD-*", prefix PR title with "[AFD-xxxx]"
 
