@@ -1,10 +1,15 @@
-First use Atlassian mcp to view the ticket: $ARGUMENT
+Analyze and fix the Jira ticket: $ARGUMENTS
 
-Please follow these steps:
-1. Use Atlassian mcp to view the ticket details and historical comments
+Follow these steps:
+
+1. Use Atlassian MCP to fetch ticket details and historical comments for: $ARGUMENTS
+
 2. Understand the problem described in the ticket
-3. Locate the domain or API where the problem exists
-4. Use technical-solution-architect to write technical design
-5. Use golang-backend-engineer to write code based on the technical solutions
 
-IMPORTANT: If there is anything unclear or you don't know how to proceed during the process, you MUST stop and ask me!!!!!!!!! Otherwise you're doomed!!!!!!!!!
+3. Locate the affected domain or API in the codebase
+
+4. Generate technical solution design (use /technical-solution-architect if needed)
+
+5. Implement the fix following best practices (use /golang-backend-engineer if needed)
+
+IMPORTANT: Stop and ask for clarification if anything is unclear at any step.

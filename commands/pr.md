@@ -1,7 +1,9 @@
-Use `gh` command to create a new PR to the upstream branch $ARGUMENT.
+Create a GitHub pull request to the upstream branch: $ARGUMENTS
 
-1. Use the .github/pull_request_template.md as PR template
-2. Create the PR to the upstream $ARGUMENT branch
-3. If the current branch is named with pattern "AFD-*", add "[AFD-xxxx]" to the beginning of the PR title.
-4. If $ARGUMENT is empty, use `master` as default.
-5. When filling the section of "目的或是相关联的 Jira tickets", generate a link of Jira ticket beginning with "https://aftership.atlassian.net/browse/AFD-xxxx"
+1. Use `gh pr create` with the template from `.github/pull_request_template.md`
+
+2. Set target branch to `$ARGUMENTS` (default to `master` if empty)
+
+3. If current branch matches pattern "AFD-*", prefix PR title with "[AFD-xxxx]"
+
+4. For "目的或是相关联的 Jira tickets" section, generate Jira link: https://aftership.atlassian.net/browse/AFD-xxxx
